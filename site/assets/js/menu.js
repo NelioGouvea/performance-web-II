@@ -1,9 +1,9 @@
-window.addEventListener('load', function() {
+(function() {
 	var titulo = document.querySelector('.header-menu-titulo');
 	var menu = document.querySelector('.header-menu');
 
 	if (titulo) {
-		titulo.onclick = function() {
+		titulo.onclick = function () {
 			if (menu.hasAttribute('data-ativo')) {
 				menu.removeAttribute('data-ativo');
 			} else {
@@ -11,4 +11,5 @@ window.addEventListener('load', function() {
 			}
 		};
 	}
-});
+
+})();
