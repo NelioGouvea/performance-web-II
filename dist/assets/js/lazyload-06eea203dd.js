@@ -1,0 +1,1 @@
+var alreadyRun=!1;window.onscroll=function(){if(!alreadyRun){alreadyRun=!0,setTimeout(function(){alreadyRun=!1},100);for(var e=document.querySelectorAll("img[data-src]"),n=0;n<e.length;n++)e[n].getBoundingClientRect().top<window.innerHeight&&(e[n].src=e[n].getAttribute("data-src"))}};
