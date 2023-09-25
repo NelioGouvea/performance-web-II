@@ -3,11 +3,15 @@
 runtime: php55
 api_version: 1
 version: web
+application: curso-performance-2
 
 handlers:
   - url: /
     static_files: index.html
     upload: index.html
+    expiration: 0s
+    http_headers:
+      Link: <assets/img/logo-alura.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo.svg> rel=preload; as=image
 
   - url: /assets
     static_dir: assets
